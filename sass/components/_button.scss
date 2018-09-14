@@ -1,6 +1,20 @@
 .btn {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+    font-size: $default-font-size;
+    white-space: nowrap;
+
     &:link,
     &:visited {
+        border: none;
+        cursor: pointer;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -10,7 +24,10 @@
         position: relative;
         font-size: $default-font-size;
         white-space: nowrap;
-        
+    }
+
+    &:focus {
+        outline: none;
     }
     
     &:hover {
