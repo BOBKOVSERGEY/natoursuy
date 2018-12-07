@@ -8,6 +8,9 @@
 html {
     /* font-size: 10px; */
     font-size: 62.5%;
+    @include respond(phone) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -16,3 +19,4 @@ body {
 img {
     max-width: 100%;
 }
+

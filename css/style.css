@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/*
+0 - 600px Phone
+600 - 900px Tablet portrait
+900 - 1200px Tablet landscape
+1200 - 1800 is where our normal styles apply
+1800px + big desktop
+ */
+/*
+$breakpoint
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -47,6 +61,9 @@
 html {
   /* font-size: 10px; */
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
